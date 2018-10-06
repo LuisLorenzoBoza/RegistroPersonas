@@ -1,0 +1,16 @@
+﻿create table Personas(
+PersonaId int identity(1,1)primary key,
+Nombre varchar(50),
+Cedula varchar(15),
+Direccion varchar(max)
+FechaNacimineto dateTime
+);
+
+
+
+create table TelefonosDetalle(
+Id int identity(1,1) primary key,
+PersonaId int,
+TipoTelefono int,
+Telefono varchar(15)
+);
